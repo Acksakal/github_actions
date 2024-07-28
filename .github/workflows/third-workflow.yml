@@ -2,7 +2,7 @@ name: Third Workflow
 on: push
 
 jobs:
-  run-first-command: 
+  list-files: 
    runs-on: ubuntu-latest
    steps:
     - name: List Files
