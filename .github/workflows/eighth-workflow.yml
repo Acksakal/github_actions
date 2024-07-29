@@ -14,7 +14,7 @@ on:
         options:
           - Value 1
           - Value 2
-          - value 3
+          - Value 3
           - Value 4
         default: "Value 2"
       checkCustom:
@@ -22,13 +22,11 @@ on:
         type: boolean
 
 jobs:
-  run-first-command: 
-   runs-on: ubuntu-latest
-   steps:
-    - name: Event Vars
-      run: |
-        echo "Value: ${{ inputs.selectCustom }}"
-        echo "Title: ${{ inputs.titleCustom }}"
-        echo "Checkbox: ${{ inputs.checkCustom }}"
-    
-      
+  run-first-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Event Vars
+        run: |
+          echo "Value: ${{ inputs.selectCustom }}"
+          echo "Title: ${{ inputs.titleCustom }}"
+          echo "Checkbox: ${{ inputs.checkCustom }}"
