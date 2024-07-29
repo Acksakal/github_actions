@@ -1,7 +1,5 @@
 name: Tenth Workflow
-on:
-  repository_dispatch:
-    types: [push]
+on: [push]
 
 jobs:
   run-first-command:
