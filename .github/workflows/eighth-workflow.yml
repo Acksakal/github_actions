@@ -28,8 +28,8 @@ jobs:
    steps:
     - name: Event Vars
       run: |
-        echo "Title: ${{ inputs.titleCustom }}"
         echo "Value: ${{ inputs.selectCustom }}"
+        echo "Title: ${{ inputs.titleCustom }}"
         echo "Checkbox: ${{ inputs.checkCustom }}"
     
       
