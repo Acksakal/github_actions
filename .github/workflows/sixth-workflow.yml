@@ -3,7 +3,7 @@ on:
   push:
     branches:
       - main
-      - "page/*" # page/about page/blog page/contact 
+      - "page/*" # page/about page/blog page/contact
       - "page/**" # page/category/lifestyle
       - "!page/blog"
     # branches-ignore:
@@ -15,12 +15,10 @@ on:
       - "**.html"
 
 jobs:
-  run-first-command: 
-   runs-on: ubuntu-latest
-   steps:
-    - name: Event Vars
-      run: |
-        echo $GITHUB_SHA
-        echo $GITHUB_REF
-    
-      
+  run-first-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Event Vars
+        run: |
+          echo $GITHUB_SHA
+          echo $GITHUB_REF
