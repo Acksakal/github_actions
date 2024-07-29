@@ -14,7 +14,7 @@ on:
         options:
           - Value 1
           - Value 2
-          - Value 3
+          - value 3
           - Value 4
         default: "Value 2"
       checkCustom:
