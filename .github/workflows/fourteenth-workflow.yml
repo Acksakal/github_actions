@@ -1,5 +1,6 @@
 name: Fourteenth Workflow
 on: workflow_dispatch
+run-name: testing Actions cache
 
 jobs:
   first-job:
@@ -13,6 +14,6 @@ jobs:
             path: ~/.npm
             key: "cache-file"
       - name: Display Cache
-        run: echo "${{ steps.cache-step.outputs }}"
+        run: echo "${{ toJson(steps.cache-step.outputs) }}"
       - name: Install node_modules
         run: npm install
