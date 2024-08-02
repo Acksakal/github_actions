@@ -9,5 +9,4 @@ jobs:
       - name: Our Vars & Secrets
         run: |
           echo "${{ Vars.STATUS }}"
-          echo "${{ secrets.PASSWORD }}"
           echo "${{ secrets.LOGIN }}"
