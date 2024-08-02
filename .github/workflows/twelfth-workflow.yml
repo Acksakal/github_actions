@@ -1,5 +1,5 @@
 name: Twelfth Workflow
-on: push
+on: [push]
 
 jobs:
   run-first-command:
